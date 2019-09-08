@@ -1,0 +1,17 @@
+<mat-spinner *ngIf="!stats"></mat-spinner>
+<div fxLayoutGap="10px" fxLayout="column" fxLayoutAlign="center center">
+    <mat-card>
+        <mat-card-title fxLayoutAlign="center center">Near Earth Object Count</mat-card-title>
+        <mat-card-subtitle fxLayoutAlign="center center">{{stats.near_earth_object_count}}</mat-card-subtitle>
+
+        <mat-card-title fxLayoutAlign="center center">Close Approach Count</mat-card-title>
+        <mat-card-subtitle fxLayoutAlign="center center">{{stats.close_approach_count}}</mat-card-subtitle>
+
+        <mat-card-title fxLayoutAlign="center center">Last Updated</mat-card-title>
+        <mat-card-subtitle fxLayoutAlign="center center">{{stats.last_updated}}</mat-card-subtitle>
+
+        <mat-card-title fxLayoutAlign="center center">Source</mat-card-title>
+        <mat-card-subtitle fxLayoutAlign="center center"><a href="{{stats.nasa_jpl_url}}" target="_blank"><span style="color: lightblue">{{stats.source}}</span></a></mat-card-subtitle>
+    </mat-card>
+</div>
+
